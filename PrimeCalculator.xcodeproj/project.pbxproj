@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E03CD2B91DC681F500CC71B5 /* PrimeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03CD2B81DC681F500CC71B5 /* PrimeResponse.swift */; };
 		E0CEEF241DB1AB960021BE9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEEF231DB1AB960021BE9C /* AppDelegate.swift */; };
 		E0CEEF291DB1AB960021BE9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0CEEF271DB1AB960021BE9C /* Main.storyboard */; };
 		E0CEEF2B1DB1AB960021BE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CEEF2A1DB1AB960021BE9C /* Assets.xcassets */; };
 		E0CEEF2E1DB1AB960021BE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0CEEF2C1DB1AB960021BE9C /* LaunchScreen.storyboard */; };
 		E0CEEF391DB1AB960021BE9C /* PrimeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEEF381DB1AB960021BE9C /* PrimeCalculatorTests.swift */; };
 		E0CEEF441DB1AB960021BE9C /* PrimeCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEEF431DB1AB960021BE9C /* PrimeCalculatorUITests.swift */; };
-		E0CEEF521DB1ABD80021BE9C /* PrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEEF511DB1ABD80021BE9C /* PrimeCalculator.swift */; };
 		E0CEEF541DB27ED40021BE9C /* PrimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEEF531DB27ED40021BE9C /* PrimeViewController.swift */; };
+		E0CEEF581DC292770021BE9C /* PrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEEF571DC292770021BE9C /* PrimeCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E03CD2B81DC681F500CC71B5 /* PrimeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeResponse.swift; sourceTree = "<group>"; };
 		E0CEEF201DB1AB960021BE9C /* PrimeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CEEF231DB1AB960021BE9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0CEEF281DB1AB960021BE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,8 +49,8 @@
 		E0CEEF3F1DB1AB960021BE9C /* PrimeCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CEEF431DB1AB960021BE9C /* PrimeCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculatorUITests.swift; sourceTree = "<group>"; };
 		E0CEEF451DB1AB960021BE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E0CEEF511DB1ABD80021BE9C /* PrimeCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeCalculator.swift; sourceTree = SOURCE_ROOT; };
 		E0CEEF531DB27ED40021BE9C /* PrimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeViewController.swift; sourceTree = "<group>"; };
+		E0CEEF571DC292770021BE9C /* PrimeCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,14 @@
 		E0CEEF221DB1AB960021BE9C /* PrimeCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				E0CEEF511DB1ABD80021BE9C /* PrimeCalculator.swift */,
+				E0CEEF571DC292770021BE9C /* PrimeCalculator.swift */,
 				E0CEEF231DB1AB960021BE9C /* AppDelegate.swift */,
 				E0CEEF271DB1AB960021BE9C /* Main.storyboard */,
 				E0CEEF531DB27ED40021BE9C /* PrimeViewController.swift */,
 				E0CEEF2A1DB1AB960021BE9C /* Assets.xcassets */,
 				E0CEEF2C1DB1AB960021BE9C /* LaunchScreen.storyboard */,
 				E0CEEF2F1DB1AB960021BE9C /* Info.plist */,
+				E03CD2B81DC681F500CC71B5 /* PrimeResponse.swift */,
 			);
 			path = PrimeCalculator;
 			sourceTree = "<group>";
@@ -263,8 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0CEEF541DB27ED40021BE9C /* PrimeViewController.swift in Sources */,
-				E0CEEF521DB1ABD80021BE9C /* PrimeCalculator.swift in Sources */,
 				E0CEEF241DB1AB960021BE9C /* AppDelegate.swift in Sources */,
+				E03CD2B91DC681F500CC71B5 /* PrimeResponse.swift in Sources */,
+				E0CEEF581DC292770021BE9C /* PrimeCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +513,7 @@
 				E0CEEF4A1DB1AB960021BE9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0CEEF4B1DB1AB960021BE9C /* Build configuration list for PBXNativeTarget "PrimeCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				E0CEEF4D1DB1AB960021BE9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0CEEF4E1DB1AB960021BE9C /* Build configuration list for PBXNativeTarget "PrimeCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +531,7 @@
 				E0CEEF501DB1AB960021BE9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,3 +7,27 @@
 //
 
 import Foundation
+
+class PrimeResponse {
+    var number: Int!
+    var prime: Bool!
+    var date: String!
+    
+    init(number: Int, prime: Bool, date: String) {
+        self.number = number;
+        self.prime = prime;
+        self.date = date;
+    }
+    
+    func getNum() -> Int {
+        return number;
+    }
+    
+    func getPrime() -> Bool {
+        return prime;
+    }
+    
+    func getDate() -> String {
+        return date;
+    }
+}

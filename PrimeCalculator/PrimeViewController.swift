@@ -11,7 +11,6 @@ import UIKit
 class PrimeViewController: UIViewController {
     
     @IBOutlet weak var fromInput: UITextField!
-    @IBOutlet weak var toInput: UITextField!
     @IBOutlet weak var primeOutput: UITextView!
     
     override func viewDidLoad() {
@@ -34,20 +33,24 @@ class PrimeViewController: UIViewController {
      */
     @IBAction func getPrimes() {
         let from = fromInput.text;
-        let to = toInput.text;
         var invalidInput = false;
-        if let intTo = Int(to!)
-        {
             if let intFrom = Int(from!) {
                 //let primes = PrimeCalculator.getPrimes(to: intTo, from: intFrom);
                 //requestPrimes(to: intTo, from: intFrom);
-                PrimeCalculator.request(to: intTo, from: intFrom){ (_response) -> Void in
+                PrimeCalculator.request(num: intFrom){ (_response) -> Void in
                     DispatchQueue.main.async(execute: {
                         // Format the NSArray into a string to display.
                         var txt = "";
-                        for nums in _response {
-                            txt.append(String(describing: nums));
-                            txt.append(" ");
+                        if(_response.getPrime()) {
+                            txt.append(String(_response.getNum()));
+                            txt.append( " is prime. \n");
+                            txt.append("Data Calculated: ");
+                            let t = _response.getDate();
+                            txt.append(t);
+                        }
+                        else {
+                            txt.append(String(_response.getNum()));
+                            txt.append( " is not prime.");
                         }
                         self.primeOutput.text = txt;
                     })
@@ -56,10 +59,6 @@ class PrimeViewController: UIViewController {
             else {
                 invalidInput = true;
             }
-        }
-        else {
-            invalidInput = true;
-        }
         if invalidInput {
             let alert = UIAlertController(title: "Alert", message: "Input must be numeric.", preferredStyle: UIAlertControllerStyle.alert);
             alert.addAction(UIAlertAction(title: "Close", style:UIAlertActionStyle.default, handler:nil));

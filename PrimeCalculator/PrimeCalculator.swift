@@ -11,7 +11,8 @@ import Foundation
 class PrimeCalculator {
     
     // The URL for my Amazon API Gateway
-        static var postURL = "https://5an21ww6pi.execute-api.us-east-1.amazonaws.com/test/primecalc"
+        static var postURL = "https://t7wg7l7j8i.execute-api.us-east-1.amazonaws.com/stage1/test"
+    
     
     /**
      - Parameters:
@@ -21,8 +22,8 @@ class PrimeCalculator {
      - Makes a POST request to my Amazon API Gateway URL
      - A JSON string is returned containing an array of all prime numbers in the range
      */
-    static func request(to: Int, from: Int, successHandler: @escaping (_ response: NSArray) -> Void)->Void{
-        let populatedDictionary = ["from": String(from), "to": String(to)];
+    static func request(num: Int, successHandler: @escaping (_ response: PrimeResponse) -> Void)->Void{
+        let populatedDictionary = ["num": String(num)];
         let data = populatedDictionary;
         let theJSONData = try? JSONSerialization.data(withJSONObject:
             data, options: .prettyPrinted);
@@ -42,8 +43,11 @@ class PrimeCalculator {
         let dataTask = session.dataTask(with: request as URLRequest) { (data:Data?, response:URLResponse?, error:Error?) -> Void in
             if error == nil {
                 let jsonDict: NSDictionary!  = try! JSONSerialization.jsonObject(with: data!,  options: []) as! NSDictionary;
-                let list = jsonDict!["primes"] as! NSArray;
-                successHandler(list as NSArray!);
+                let prime = jsonDict!["prime"] as! Bool;
+                let num = jsonDict!["num"] as! Int;
+                let date = jsonDict!["date"] as! String;
+                let resp = PrimeResponse(number: num, prime: prime, date: date);
+                successHandler(resp);
             }
         }
         dataTask.resume()
