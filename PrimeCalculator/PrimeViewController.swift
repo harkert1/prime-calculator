@@ -12,6 +12,7 @@ class PrimeViewController: UIViewController {
     
     @IBOutlet weak var fromInput: UITextField!
     @IBOutlet weak var primeOutput: UITextView!
+    @IBOutlet weak var toInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,28 +34,22 @@ class PrimeViewController: UIViewController {
      */
     @IBAction func getPrimes() {
         let from = fromInput.text;
+        let to = toInput.text;
         var invalidInput = false;
             if let intFrom = Int(from!) {
+                if let intTo = Int(to!) {
                 //let primes = PrimeCalculator.getPrimes(to: intTo, from: intFrom);
                 //requestPrimes(to: intTo, from: intFrom);
-                PrimeCalculator.request(num: intFrom){ (_response) -> Void in
+                    PrimeCalculator.request2(to: intTo, from: intFrom){ (_response) -> Void in
                     DispatchQueue.main.async(execute: {
                         // Format the NSArray into a string to display.
-                        var txt = "";
-                        if(_response.getPrime()) {
-                            txt.append(String(_response.getNum()));
-                            txt.append( " is prime. \n");
-                            txt.append("Data Calculated: ");
-                            let t = _response.getDate();
-                            txt.append(t);
-                        }
-                        else {
-                            txt.append(String(_response.getNum()));
-                            txt.append( " is not prime.");
-                        }
-                        self.primeOutput.text = txt;
+                        self.primeOutput.text = _response;
                     })
                 };
+            }
+            else {
+                invalidInput = true;
+            }
             }
             else {
                 invalidInput = true;

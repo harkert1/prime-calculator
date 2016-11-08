@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A5CC14A26810E8980DF8E48 /* Pods_PrimeCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8223B80517A6CC5B9B88992 /* Pods_PrimeCalculator.framework */; };
 		E03CD2B91DC681F500CC71B5 /* PrimeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03CD2B81DC681F500CC71B5 /* PrimeResponse.swift */; };
+		E0BA59A71DCFD77E005C7ECC /* Pods_PrimeCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BA59A61DCFD77E005C7ECC /* Pods_PrimeCalculator.framework */; };
 		E0CEEF241DB1AB960021BE9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEEF231DB1AB960021BE9C /* AppDelegate.swift */; };
 		E0CEEF291DB1AB960021BE9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0CEEF271DB1AB960021BE9C /* Main.storyboard */; };
 		E0CEEF2B1DB1AB960021BE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CEEF2A1DB1AB960021BE9C /* Assets.xcassets */; };
@@ -36,7 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17102F216C618291C6B5612D /* Pods_PrimeCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrimeCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2878CB4BC36B553C382255AE /* Pods_PrimeCalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrimeCalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35F1D61B941FBBE6E29404E1 /* Pods-PrimeCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimeCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrimeCalculator/Pods-PrimeCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		7E89156B7A2E222833ABFC8B /* Pods-PrimeCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimeCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrimeCalculator/Pods-PrimeCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		E03CD2B81DC681F500CC71B5 /* PrimeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeResponse.swift; sourceTree = "<group>"; };
+		E063C02D1DCFB8F7001AB19F /* AWSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AWSBridge.h; path = ../AWSBridge.h; sourceTree = "<group>"; };
+		E0BA59A01DCFD767005C7ECC /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "Pods/../build/Debug-iphoneos/AWSS3/AWSS3.framework"; sourceTree = "<group>"; };
+		E0BA59A21DCFD76B005C7ECC /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = "Pods/../build/Debug-iphoneos/AWSCognito/AWSCognito.framework"; sourceTree = "<group>"; };
+		E0BA59A41DCFD76F005C7ECC /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = "Pods/../build/Debug-iphoneos/AWSCore/AWSCore.framework"; sourceTree = "<group>"; };
+		E0BA59A61DCFD77E005C7ECC /* Pods_PrimeCalculator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_PrimeCalculator.framework; path = "Pods/../build/Debug-iphoneos/Pods_PrimeCalculator.framework"; sourceTree = "<group>"; };
 		E0CEEF201DB1AB960021BE9C /* PrimeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CEEF231DB1AB960021BE9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0CEEF281DB1AB960021BE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +62,7 @@
 		E0CEEF451DB1AB960021BE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0CEEF531DB27ED40021BE9C /* PrimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeViewController.swift; sourceTree = "<group>"; };
 		E0CEEF571DC292770021BE9C /* PrimeCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeCalculator.swift; sourceTree = "<group>"; };
+		F8223B80517A6CC5B9B88992 /* Pods_PrimeCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrimeCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BA59A71DCFD77E005C7ECC /* Pods_PrimeCalculator.framework in Frameworks */,
+				9A5CC14A26810E8980DF8E48 /* Pods_PrimeCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +92,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		951DC2290FDF42F0C0DCAB09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E89156B7A2E222833ABFC8B /* Pods-PrimeCalculator.debug.xcconfig */,
+				35F1D61B941FBBE6E29404E1 /* Pods-PrimeCalculator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A90638D58AB50BCF84D0743D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0BA59A61DCFD77E005C7ECC /* Pods_PrimeCalculator.framework */,
+				E0BA59A41DCFD76F005C7ECC /* AWSCore.framework */,
+				E0BA59A21DCFD76B005C7ECC /* AWSCognito.framework */,
+				E0BA59A01DCFD767005C7ECC /* AWSS3.framework */,
+				F8223B80517A6CC5B9B88992 /* Pods_PrimeCalculator.framework */,
+				17102F216C618291C6B5612D /* Pods_PrimeCalculatorTests.framework */,
+				2878CB4BC36B553C382255AE /* Pods_PrimeCalculatorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E0CEEF171DB1AB960021BE9C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +122,8 @@
 				E0CEEF371DB1AB960021BE9C /* PrimeCalculatorTests */,
 				E0CEEF421DB1AB960021BE9C /* PrimeCalculatorUITests */,
 				E0CEEF211DB1AB960021BE9C /* Products */,
+				951DC2290FDF42F0C0DCAB09 /* Pods */,
+				A90638D58AB50BCF84D0743D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +140,7 @@
 		E0CEEF221DB1AB960021BE9C /* PrimeCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				E063C02D1DCFB8F7001AB19F /* AWSBridge.h */,
 				E0CEEF571DC292770021BE9C /* PrimeCalculator.swift */,
 				E0CEEF231DB1AB960021BE9C /* AppDelegate.swift */,
 				E0CEEF271DB1AB960021BE9C /* Main.storyboard */,
@@ -138,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0CEEF481DB1AB960021BE9C /* Build configuration list for PBXNativeTarget "PrimeCalculator" */;
 			buildPhases = (
+				A3CEFC7CB738D07740764799 /* [CP] Check Pods Manifest.lock */,
 				E0CEEF1C1DB1AB960021BE9C /* Sources */,
 				E0CEEF1D1DB1AB960021BE9C /* Frameworks */,
 				E0CEEF1E1DB1AB960021BE9C /* Resources */,
+				A709441E52B8882D3DF4CC5B /* [CP] Embed Pods Frameworks */,
+				0CF990C35885D32200AB4B68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +303,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CF990C35885D32200AB4B68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrimeCalculator/Pods-PrimeCalculator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3CEFC7CB738D07740764799 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A709441E52B8882D3DF4CC5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrimeCalculator/Pods-PrimeCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0CEEF1C1DB1AB960021BE9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -341,6 +432,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -368,6 +460,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = AWSBridge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -391,6 +484,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -410,6 +504,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = AWSBridge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -418,8 +513,16 @@
 		};
 		E0CEEF491DB1AB960021BE9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E89156B7A2E222833ABFC8B /* Pods-PrimeCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSS3/**",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCognito/**",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCore/**",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/**",
+				);
 				INFOPLIST_FILE = PrimeCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Harker-Thomas.PrimeCalculator";
@@ -430,8 +533,16 @@
 		};
 		E0CEEF4A1DB1AB960021BE9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35F1D61B941FBBE6E29404E1 /* Pods-PrimeCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSS3/**",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCognito/**",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AWSCore/**",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/**",
+				);
 				INFOPLIST_FILE = PrimeCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Harker-Thomas.PrimeCalculator";
